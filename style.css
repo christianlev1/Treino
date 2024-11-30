@@ -1,0 +1,115 @@
+/* Definindo a fonte padrão usando o Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* Estilo geral da página */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8; /* Cor suave para o fundo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    padding-top: 20px;
+    color: #333;
+}
+
+/* Títulos principais */
+h1 {
+    color: #2D9CDB; /* Azul vibrante */
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #2D9CDB;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Fichas de treino (botões de seleção de treino) */
+#fichas {
+    margin-bottom: 20px;
+}
+
+button {
+    margin: 10px;
+    padding: 12px 25px;
+    background-color: #4CAF50; /* Verde vibrante */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Efeito hover no botão */
+button:hover {
+    background-color: #45a049; /* Verde mais escuro */
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+/* Estilo para os itens de treino */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 700px;
+}
+
+li {
+    background-color: #fff;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+li:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+li strong {
+    font-weight: 600;
+}
+
+li button {
+    margin-left: 10px;
+}
+
+/* Estilo para os itens concluídos */
+.concluido {
+    text-decoration: line-through;
+    color: #888;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+/* Pequenos ajustes no botão de concluir */
+button {
+    padding: 8px 20px;
+    background-color: #2D9CDB; /* Azul */
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #2188B6; /* Azul mais escuro */
+}
